@@ -1,3 +1,4 @@
+from drf_spectacular.utils import extend_schema
 from rest_framework import status, generics
 from rest_framework.permissions import IsAuthenticated
 from account.models import Rate
@@ -8,6 +9,8 @@ from blog.models import Post
 class PostListAPIView(generics.ListAPIView):
     serializer_class = PostSerializer
     permission_classes = [IsAuthenticated]
+
+    @extend_schema()  # add parameters to swagger
 
     def get_queryset(self):
         """
