@@ -132,3 +132,12 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
+
+
+# from dotenv import load_dotenv
+# import os
+
+# load_dotenv()  # Load .env file
+#
+# DJANGO_ADMIN_USER = os.getenv('DJANGO_ADMIN_USER')
+# DJANGO_ADMIN_PASSWORD = os.getenv('DJANGO_ADMIN_PASSWORD')
